@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="Project Setup">
-      <change afterPath="$PROJECT_DIR$/src/components/theme-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/auth/components/auth-screen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/auth/components/sign-in-card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/auth/components/sign-up-card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/auth/types.ts" afterDir="false" />
+    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="Design Auth (Sign In &amp; Sign Up)">
+      <change afterPath="$PROJECT_DIR$/convex/tasks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sampleData.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/test/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/convex-client-provider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -103,7 +99,7 @@
       <updated>1725579709095</updated>
       <workItem from="1725579710994" duration="1112000" />
       <workItem from="1725580973156" duration="1798000" />
-      <workItem from="1725583265548" duration="1727000" />
+      <workItem from="1725583265548" duration="3197000" />
     </task>
     <task id="LOCAL-00001" summary="Project Setup">
       <option name="closed" value="true" />
@@ -113,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725581077295</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Design Auth (Sign In &amp; Sign Up)">
+      <option name="closed" value="true" />
+      <created>1725585345513</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725585345513</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +125,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Setup" />
+    <MESSAGE value="Design Auth (Sign In &amp; Sign Up)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design Auth (Sign In &amp; Sign Up)" />
   </component>
 </project>
