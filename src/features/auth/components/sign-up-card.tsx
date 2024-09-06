@@ -4,12 +4,12 @@ import {Button} from "@/components/ui/button";
 import {Separator} from "@/components/ui/separator";
 import {FcGoogle} from "react-icons/fc";
 import {FaGithub} from "react-icons/fa";
-import {SignInFlow} from "@/features/auth/types";
+import {AuthPageFlow} from "@/features/auth/types";
 import {useState} from "react";
 
 
 interface SignUpCardProps {
-  setState: (state: SignInFlow) => void;
+  setState: (state: AuthPageFlow) => void;
 }
 
 export const SignUpCard = ({setState}: SignUpCardProps) => {
