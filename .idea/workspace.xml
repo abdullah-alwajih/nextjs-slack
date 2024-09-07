@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="fix theme provider">
+    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="add google auth provider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convex/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/components/sign-in-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/sign-in-card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,7 @@
       <workItem from="1725579710994" duration="1112000" />
       <workItem from="1725580973156" duration="1798000" />
       <workItem from="1725583265548" duration="15400000" />
-      <workItem from="1725675997075" duration="4231000" />
+      <workItem from="1725675997075" duration="4733000" />
     </task>
     <task id="LOCAL-00001" summary="Project Setup">
       <option name="closed" value="true" />
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725680486123</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add google auth provider">
+      <option name="closed" value="true" />
+      <created>1725681617146</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725681617147</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +204,7 @@
     <MESSAGE value="add next config" />
     <MESSAGE value="Add GitHub Authentication" />
     <MESSAGE value="fix theme provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix theme provider" />
+    <MESSAGE value="add google auth provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="add google auth provider" />
   </component>
 </project>
