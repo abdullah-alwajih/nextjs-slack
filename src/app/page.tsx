@@ -1,12 +1,34 @@
-"use client";
-import {UserButton} from "@/features/auth/components/user-button";
+'use client';
 
-export default function Home() {
+import { UserButton } from '@/features/auth/components/user-button';
+import { useCreateWorkspaceModal } from '@/features/workspaces/store/use-create-workspace-modal';
+import { useGetWorkspaces } from '@/features/workspaces/api/use-get-workspaces';
+import { useRouter } from 'next/navigation';
+import { useEffect, useMemo } from 'react';
+
+const HomePage = () => {
+  const router = useRouter();
+  const [open, setOpen] = useCreateWorkspaceModal();
+
+  const { data, isLoading } = useGetWorkspaces();
+
+  const workspaceId = useMemo(() => data?.[0]?._id, [data]);
+
+  useEffect(() => {
+    if (isLoading) return;
+
+    if (workspaceId) {
+      router.replace(`/workspace/${workspaceId}`);
+    } else if (!open) {
+      setOpen(true);
+    }
+  }, [isLoading, workspaceId, open, setOpen, router]);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-col">
-        <UserButton/>
-      </div>
-    </main>
+    <div>
+      <UserButton />
+    </div>
   );
-}
+};
+
+export default HomePage;

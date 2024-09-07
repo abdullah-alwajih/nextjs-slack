@@ -4,7 +4,9 @@ import "./globals.css";
 import {ThemeProvider} from "@/components/theme-provider";
 import {ConvexClientProvider} from "@/components/convex-client-provider";
 import {ConvexAuthNextjsServerProvider} from "@convex-dev/auth/nextjs/server";
+import { Toaster } from 'sonner';
 
+import {Modals} from '@/components/modals';
 
 const lato = localFont({
   src: [
@@ -58,6 +60,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Toaster/>
+          <Modals/>
           {children}
         </ThemeProvider>
       </ConvexClientProvider>
