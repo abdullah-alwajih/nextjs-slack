@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="add pending">
-      <change afterPath="$PROJECT_DIR$/src/app/fonts/lato-black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/fonts/lato-bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/fonts/lato-italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/fonts/lato-latin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/fonts/lato-regular.woff2" afterDir="false" />
+    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="add fonts, favicon, title with description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convex/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/components/sign-in-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/sign-in-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/components/sign-up-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/sign-up-card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +120,7 @@
       <workItem from="1725579710994" duration="1112000" />
       <workItem from="1725580973156" duration="1798000" />
       <workItem from="1725583265548" duration="15400000" />
-      <workItem from="1725675997075" duration="6968000" />
+      <workItem from="1725675997075" duration="8173000" />
     </task>
     <task id="LOCAL-00001" summary="Project Setup">
       <option name="closed" value="true" />
@@ -207,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725682232371</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add fonts, favicon, title with description">
+      <option name="closed" value="true" />
+      <created>1725684557906</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1725684557906</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +226,7 @@
     <MESSAGE value="fix theme provider" />
     <MESSAGE value="add google auth provider" />
     <MESSAGE value="add pending" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pending" />
+    <MESSAGE value="add fonts, favicon, title with description" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fonts, favicon, title with description" />
   </component>
 </project>
