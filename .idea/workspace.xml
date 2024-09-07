@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="Add User button component">
-      <change afterPath="$PROJECT_DIR$/convex/members.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/convex/workspaces.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/sidebar-button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/toolbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/workspace-header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/workspace-sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/workspace-switcher.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hint.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modals.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/workspaces/api/use-create-workspace.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/workspaces/api/use-get-workspace.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/workspaces/api/use-get-workspaces.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/workspaces/components/create-workspace-modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/workspaces/store/use-create-workspace-modal.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/use-workspace-id.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convex/_generated/api.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/_generated/api.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convex/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/test/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="Add Members" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +48,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/kaito/PycharmProjects/slack/src/components",
+    "last_opened_file_path": "/Users/kaito/PycharmProjects/slack/src/features",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,11 +70,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/features" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/convex" />
-      <recent name="$PROJECT_DIR$/src/features" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -144,7 +116,7 @@
       <workItem from="1725579710994" duration="1112000" />
       <workItem from="1725580973156" duration="1798000" />
       <workItem from="1725583265548" duration="15400000" />
-      <workItem from="1725675997075" duration="11867000" />
+      <workItem from="1725675997075" duration="12259000" />
     </task>
     <task id="LOCAL-00001" summary="Project Setup">
       <option name="closed" value="true" />
@@ -250,7 +222,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725687731799</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add Workspace">
+      <option name="closed" value="true" />
+      <created>1725747461451</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725747461451</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add Members">
+      <option name="closed" value="true" />
+      <created>1725747822674</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1725747822674</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +257,8 @@
     <MESSAGE value="add fonts, favicon, title with description" />
     <MESSAGE value="add Password Authentication" />
     <MESSAGE value="Add User button component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add User button component" />
+    <MESSAGE value="Add Workspace" />
+    <MESSAGE value="Add Members" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Members" />
   </component>
 </project>

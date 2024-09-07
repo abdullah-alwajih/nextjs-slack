@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import {Button} from '@/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -6,24 +6,23 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { useGetWorkspace } from '@/features/workspaces/api/use-get-workspace';
-import { useGetWorkspaces } from '@/features/workspaces/api/use-get-workspaces';
-import { useCreateWorkspaceModal } from '@/features/workspaces/store/use-create-workspace-modal';
-import { useWorkspaceId } from '@/hooks/use-workspace-id';
-import { Loader, Plus } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import {useGetWorkspace} from '@/features/workspaces/api/use-get-workspace';
+import {useGetWorkspaces} from '@/features/workspaces/api/use-get-workspaces';
+import {useCreateWorkspaceModal} from '@/features/workspaces/store/use-create-workspace-modal';
+import {useWorkspaceId} from '@/hooks/use-workspace-id';
+import {Loader, Plus} from 'lucide-react';
+import {useRouter} from 'next/navigation';
 
 export const WorkspaceSwitcher = () => {
   const router = useRouter();
   const workspaceId = useWorkspaceId();
-  // eslint-disable-next-line no-unused-vars
-  const [open, setOpen] = useCreateWorkspaceModal();
+  const [, setOpen] = useCreateWorkspaceModal();
 
-  const { data: workspace, isLoading: workspaceLoading } = useGetWorkspace({
+  const {data: workspace, isLoading: workspaceLoading} = useGetWorkspace({
     id: workspaceId,
   });
 
-  const { data: workspaces, isLoading: workspacesLoading } = useGetWorkspaces();
+  const {data: workspaces, isLoading: workspacesLoading} = useGetWorkspaces();
 
   const filteredWorkspaces = workspaces?.filter(
     (workspace) => workspace?._id !== workspaceId,
@@ -32,9 +31,10 @@ export const WorkspaceSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button className="relative size-9 overflow-hidden bg-[#ABABAD] text-xl font-semibold text-slate-800 hover:bg-[#ABABAD]/80">
+        <Button
+          className="relative size-9 overflow-hidden bg-[#ABABAD] text-xl font-semibold text-slate-800 hover:bg-[#ABABAD]/80">
           {workspaceLoading ? (
-            <Loader className="size-5 shrink-0 animate-spin" />
+            <Loader className="size-5 shrink-0 animate-spin"/>
           ) : (
             workspace?.name.charAt(0).toUpperCase()
           )}
@@ -54,9 +54,9 @@ export const WorkspaceSwitcher = () => {
             Active workspace
           </span>
         </DropdownMenuItem>
-        <DropdownMenuSeparator />
+        <DropdownMenuSeparator/>
         {workspacesLoading ? (
-          <Loader className="size-5 shrink-0 animate-spin" />
+          <Loader className="size-5 shrink-0 animate-spin"/>
         ) : (
           filteredWorkspaces?.map((workspace) => (
             <DropdownMenuItem
@@ -64,7 +64,8 @@ export const WorkspaceSwitcher = () => {
               onClick={() => router.push(`/workspace/${workspace._id}`)}
               className="cursor-pointer overflow-hidden capitalize"
             >
-              <div className="relative mr-2 flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-md bg-[#616061] text-lg font-semibold text-white">
+              <div
+                className="relative mr-2 flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-md bg-[#616061] text-lg font-semibold text-white">
                 {workspace.name.charAt(0).toUpperCase()}
               </div>
               <p className="truncate">{workspace.name}</p>
@@ -75,8 +76,9 @@ export const WorkspaceSwitcher = () => {
           onClick={() => setOpen(true)}
           className="cursor-pointer"
         >
-          <div className="relative mr-2 flex size-9 items-center justify-center overflow-hidden rounded-md bg-[#F2F2F2] text-lg font-semibold text-slate-800">
-            <Plus />
+          <div
+            className="relative mr-2 flex size-9 items-center justify-center overflow-hidden rounded-md bg-[#F2F2F2] text-lg font-semibold text-slate-800">
+            <Plus/>
           </div>
           Create a new workspace
         </DropdownMenuItem>
