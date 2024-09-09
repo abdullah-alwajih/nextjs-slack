@@ -1,8 +1,8 @@
-import { toast } from "sonner";
-import { useState } from "react";
-import { TrashIcon } from "lucide-react";
-import { useRouter } from "next/navigation";
-import { FaChevronDown } from "react-icons/fa";
+import {toast} from "sonner";
+import {useState} from "react";
+import {TrashIcon} from "lucide-react";
+import {useRouter} from "next/navigation";
+import {FaChevronDown} from "react-icons/fa";
 
 import {
   Dialog,
@@ -14,22 +14,22 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import {Input} from "@/components/ui/input";
+import {Button} from "@/components/ui/button";
 
-import { useConfirm } from "@/hooks/use-confirm";
-import { useChannelId } from "@/hooks/use-channel-id";
-import { useWorkspaceId } from "@/hooks/use-workspace-id";
+import {useConfirm} from "@/hooks/use-confirm";
+import {useChannelId} from "@/hooks/use-channel-id";
+import {useWorkspaceId} from "@/hooks/use-workspace-id";
 
-import { useCurrentMember } from "@/features/members/api/use-current-member";
-import { useUpdateChannel } from "@/features/channels/api/use-update-channel";
-import { useRemoveChannel } from "@/features/channels/api/use-remove-channel";
+import {useCurrentMember} from "@/features/members/api/use-current-member";
+import {useUpdateChannel} from "@/features/channels/api/use-update-channel";
+import {useRemoveChannel} from "@/features/channels/api/use-remove-channel";
 
 interface HeaderProps {
   title: string;
 }
 
-export const Header = ({ title }: HeaderProps) => {
+export const Header = ({title}: HeaderProps) => {
   const router = useRouter();
   const channelId = useChannelId();
   const workspaceId = useWorkspaceId();
@@ -41,10 +41,10 @@ export const Header = ({ title }: HeaderProps) => {
     "You are about to delete this channel. This action is irreversible"
   );
 
-  const { data: member } = useCurrentMember({ workspaceId });
-  const { mutate: updateChannel, isPending: isUpdatingChannel } =
+  const {data: member} = useCurrentMember({workspaceId});
+  const {mutate: updateChannel, isPending: isUpdatingChannel} =
     useUpdateChannel();
-  const { mutate: removeChannel, isPending: isRemovingChannel } =
+  const {mutate: removeChannel, isPending: isRemovingChannel} =
     useRemoveChannel();
 
   const handleEditOpen = (value: boolean) => {
@@ -63,8 +63,8 @@ export const Header = ({ title }: HeaderProps) => {
 
     if (!ok) return;
 
-    removeChannel(
-      { id: channelId },
+    await removeChannel(
+      {id: channelId},
       {
         onSuccess: () => {
           toast.success("Channel deleted");
@@ -81,7 +81,7 @@ export const Header = ({ title }: HeaderProps) => {
     e.preventDefault();
 
     updateChannel(
-      { id: channelId, name: value },
+      {id: channelId, name: value},
       {
         onSuccess: () => {
           toast.success("Channel updated");
@@ -96,7 +96,7 @@ export const Header = ({ title }: HeaderProps) => {
 
   return (
     <div className="bg-white border-b h-[49px] flex items-center px-4 overflow-hidden">
-      <ConfirmDialog />
+      <ConfirmDialog/>
       <Dialog>
         <DialogTrigger asChild>
           <Button
@@ -104,7 +104,7 @@ export const Header = ({ title }: HeaderProps) => {
             className="text-lg font-semibold px-2 overflow-hidden w-auto"
           >
             <span className="truncate"># {title}</span>
-            <FaChevronDown className="size-2.5 ml-2" />
+            <FaChevronDown className="size-2.5 ml-2"/>
           </Button>
         </DialogTrigger>
         <DialogContent className="p-0 bg-gray-50 overflow-hidden">
@@ -160,7 +160,7 @@ export const Header = ({ title }: HeaderProps) => {
                 disabled={isRemovingChannel}
                 className="flex items-center gap-x-2 px-5 py-4 bg-white rounded-lg cursor-pointer border hover:bg-destructive/20 text-rose-600"
               >
-                <TrashIcon className="size-4" />
+                <TrashIcon className="size-4"/>
                 <p className="text-sm font-semibold">Delete channel</p>
               </button>
             )}
