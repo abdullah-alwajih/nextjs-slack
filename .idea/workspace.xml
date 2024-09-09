@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="development">
+    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="add JotaiProvider in root layout and fix ts error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/emoji-popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emoji-popover.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/members/components/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/members/components/profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/upload/api/use-generate-upload-url.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/upload/api/use-generate-upload-url.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +123,7 @@
       <workItem from="1725583265548" duration="15400000" />
       <workItem from="1725675997075" duration="14094000" />
       <workItem from="1725852401851" duration="3470000" />
-      <workItem from="1725856172701" duration="2093000" />
+      <workItem from="1725856172701" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="Project Setup">
       <option name="closed" value="true" />
@@ -265,7 +261,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725856758861</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix ts error">
+      <option name="closed" value="true" />
+      <created>1725858451274</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1725858451274</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add JotaiProvider in root layout and fix ts error">
+      <option name="closed" value="true" />
+      <created>1725858656176</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1725858656176</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +311,8 @@
     <MESSAGE value="Add Members" />
     <MESSAGE value="fixe error" />
     <MESSAGE value="development" />
-    <option name="LAST_COMMIT_MESSAGE" value="development" />
+    <MESSAGE value="fix ts error" />
+    <MESSAGE value="add JotaiProvider in root layout and fix ts error" />
+    <option name="LAST_COMMIT_MESSAGE" value="add JotaiProvider in root layout and fix ts error" />
   </component>
 </project>
