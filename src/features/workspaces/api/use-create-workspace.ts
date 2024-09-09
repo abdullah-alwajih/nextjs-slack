@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
 import { useMutation } from 'convex/react';
-import { api } from '../../../../convex/_generated/api';
 import { useCallback, useMemo, useState } from 'react';
+
+import { api } from '../../../../convex/_generated/api';
 import { Id } from '../../../../convex/_generated/dataModel';
-// import { isError } from 'util';
 
 type RequestType = { name: string };
 type ResponseType = Id<'workspaces'> | null;
@@ -18,9 +17,8 @@ type Options = {
 export const useCreateWorkspace = () => {
   const [data, setData] = useState<ResponseType>(null);
   const [error, setError] = useState<Error | null>(null);
-  const [status, setStatus] = useState<
-    'success' | 'error' | 'settled' | 'pending' | null
-  >(null);
+
+  const [status, setStatus] = useState<'success' | 'error' | 'settled' | 'pending' | null>(null);
 
   const isPending = useMemo(() => status === 'pending', [status]);
   const isSuccess = useMemo(() => status === 'success', [status]);
@@ -40,6 +38,7 @@ export const useCreateWorkspace = () => {
         options?.onSuccess?.(response);
         return response;
       } catch (error) {
+        setStatus('error');
         options?.onError?.(error as Error);
         if (options?.throwError) {
           throw error;
@@ -49,7 +48,7 @@ export const useCreateWorkspace = () => {
         options?.onSettled?.();
       }
     },
-    [mutation],
+    [mutation]
   );
 
   return { mutate, data, error, isPending, isSuccess, isError, isSettled };

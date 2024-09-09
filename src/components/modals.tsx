@@ -1,22 +1,23 @@
-'use client';
+"use client";
 
-import { CreateWorkspaceModal } from '@/features/workspaces/components/create-workspace-modal';
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+
+import { CreateChannelModal } from "@/features/channels/components/create-channel-modal";
+import { CreateWorkspaceModal } from "@/features/workspaces/components/create-workspace-modal";
 
 export const Modals = () => {
-  const [isMounted, setIsMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
+    setMounted(true);
   }, []);
 
-  if (!isMounted) {
-    return null;
-  }
+  if (!mounted) return null;
 
   return (
     <>
       <CreateWorkspaceModal />
+      <CreateChannelModal />
     </>
   );
 };

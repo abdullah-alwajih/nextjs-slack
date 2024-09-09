@@ -1,7 +1,7 @@
-import GitHub from '@auth/core/providers/github';
-import Google from '@auth/core/providers/google';
-import { Password } from '@convex-dev/auth/providers/Password';
+import Google from "@auth/core/providers/google";
+import GitHub from "@auth/core/providers/github";
 import { convexAuth } from '@convex-dev/auth/server';
+import { Password } from "@convex-dev/auth/providers/Password";
 import { DataModel } from './_generated/dataModel';
 
 const CustomPassword = Password<DataModel>({
@@ -11,8 +11,8 @@ const CustomPassword = Password<DataModel>({
       name: params.name as string,
     };
   },
-});
+})
 
 export const { auth, signIn, signOut, store } = convexAuth({
-  providers: [GitHub, Google, CustomPassword],
+  providers: [CustomPassword, GitHub, Google]
 });
