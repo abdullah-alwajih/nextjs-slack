@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 
 import { Hint } from "./hint";
 import { Button } from "./ui/button";
-import { EmojiPopover } from "./emoji-popover";
+import {EmojiPopover, IEmoji} from "./emoji-popover";
 
 type EditorValue = {
   image: File | null;
@@ -150,7 +150,7 @@ const Editor = ({
     }
   };
 
-  const onEmojiSelect = (emoji: any) => {
+  const onEmojiSelect = (emoji: IEmoji) => {
     const quill = quillRef.current;
 
     quill?.insertText(quill?.getSelection()?.index || 0, emoji.native);

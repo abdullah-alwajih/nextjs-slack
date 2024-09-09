@@ -4,50 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="fixe error">
-      <change afterPath="$PROJECT_DIR$/convex/channels.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/convex/conversations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/convex/messages.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/convex/reactions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/convex/upload.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/join/[workspaceId]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/channel/[channelId]/chat-input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/channel/[channelId]/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/channel/[channelId]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/invite-modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/member/[memberId]/chat-input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/member/[memberId]/conversation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/member/[memberId]/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/member/[memberId]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/preferences-modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/sidebar-button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/sidebar-item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/toolbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/user-item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/workspace-header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/workspace-section.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/workspace-sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/workspace-switcher.tsx" afterDir="false" />
+    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="development">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convex/_generated/api.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/_generated/api.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convex/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convex/members.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/members.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convex/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convex/users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/users.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convex/workspaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/convex/workspaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/auth/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/sidebar-button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/sidebar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/toolbar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/workspace-header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/workspace-sidebar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/components/workspace-switcher.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/editor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/emoji-popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emoji-popover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/members/components/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/members/components/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/upload/api/use-generate-upload-url.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/upload/api/use-generate-upload-url.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +39,9 @@
     &quot;accountId&quot;: &quot;ed0d251b-a85d-4e12-ad45-1bed11050b8f&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -92,7 +57,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/kaito/PycharmProjects/slack",
+    "last_opened_file_path": "/Users/kaito/PycharmProjects/slack/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,11 +79,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/features" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -162,6 +127,7 @@
       <workItem from="1725583265548" duration="15400000" />
       <workItem from="1725675997075" duration="14094000" />
       <workItem from="1725852401851" duration="3470000" />
+      <workItem from="1725856172701" duration="2093000" />
     </task>
     <task id="LOCAL-00001" summary="Project Setup">
       <option name="closed" value="true" />
@@ -291,11 +257,30 @@
       <option name="project" value="LOCAL" />
       <updated>1725748172144</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="development">
+      <option name="closed" value="true" />
+      <created>1725856758861</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1725856758861</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Setup" />
@@ -313,6 +298,7 @@
     <MESSAGE value="Add Workspace" />
     <MESSAGE value="Add Members" />
     <MESSAGE value="fixe error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixe error" />
+    <MESSAGE value="development" />
+    <option name="LAST_COMMIT_MESSAGE" value="development" />
   </component>
 </project>

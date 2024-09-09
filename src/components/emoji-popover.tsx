@@ -13,8 +13,14 @@ import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 interface EmojiPopoverProps {
   children: React.ReactNode;
   hint?: string;
-  onEmojiSelect: (emoji: any) => void;
+  onEmojiSelect: (emoji: IEmoji) => void;
 }
+
+
+export interface IEmoji {
+  native: string;
+}
+
 
 export const EmojiPopover = ({
   children,
@@ -24,7 +30,7 @@ export const EmojiPopover = ({
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [tootltipOpen, setTootltipOpen] = useState(false);
 
-  const onSelect = (emoji: any) => {
+  const onSelect = (emoji: IEmoji) => {
     onEmojiSelect(emoji);
     setPopoverOpen(false);
 
