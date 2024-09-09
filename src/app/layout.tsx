@@ -7,6 +7,7 @@ import {ConvexAuthNextjsServerProvider} from "@convex-dev/auth/nextjs/server";
 import { Toaster } from 'sonner';
 
 import {Modals} from '@/components/modals';
+import {JotaiProvider} from "@/components/jotai-provider";
 
 const lato = localFont({
   src: [
@@ -60,9 +61,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Toaster/>
-          <Modals/>
-          {children}
+           <JotaiProvider>
+              <Modals />
+              {children}
+            </JotaiProvider>
+            <Toaster richColors theme="light" position="bottom-center" />
         </ThemeProvider>
       </ConvexClientProvider>
       </body>
