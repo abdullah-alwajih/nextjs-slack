@@ -1,6 +1,4 @@
 import Link from "next/link";
-import {toast} from "sonner";
-import {useRouter} from "next/navigation";
 import {AlertTriangle, ChevronDownIcon, Loader, MailIcon, XIcon,} from "lucide-react";
 
 import {Button} from "@/components/ui/button";
@@ -13,115 +11,24 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {ProfileProps, useProfileActions} from "@/features/members/hooks/useProfileActions";
 
-import {useConfirm} from "@/hooks/use-confirm";
-import {useWorkspaceId} from "@/hooks/use-workspace-id";
-
-import {useGetMember} from "../api/use-get-member";
-import {useUpdateMember} from "../api/use-update-member";
-import {useRemoveMember} from "../api/use-remove-member";
-import {useCurrentMember} from "../api/use-current-member";
-
-import {Id} from "../../../../convex/_generated/dataModel";
-
-interface ProfileProps {
-  memberId: Id<"members">;
-  onClose: () => void;
-}
 
 export const Profile = ({memberId, onClose}: ProfileProps) => {
-  const router = useRouter();
-  const workspaceId = useWorkspaceId();
+  const {
+    handleLeave,
+    handleRemove,
+    handleUpdate,
+    LeaveDialog,
+    RemoveDialog,
+    UpdateDialog,
+    avatarFallback,
+    currentMember,
+    isLoadingCurrentMember,
+    member,
+    isLoadingMember,
+  } = useProfileActions({memberId, onClose});
 
-  const [LeaveDialog, confirmLeave] = useConfirm(
-    "Leave Workspace",
-    "Are you sure you want to leave this workspace?"
-  );
-
-  const [RemoveDialog, confirmRemove] = useConfirm(
-    "Remove member",
-    "Are you sure you want to remove this member?"
-  );
-
-  const [UpdateDialog, confirmUpdate] = useConfirm(
-    "Change role",
-    "Are you sure you want to change this members role?"
-  );
-
-  const {data: currentMember, isLoading: isLoadingCurrentMember} =
-    useCurrentMember({workspaceId});
-  const {data: member, isLoading: isLoadingMember} = useGetMember({
-    id: memberId,
-  });
-
-  const {mutate: updateMember} =
-    useUpdateMember();
-  const {mutate: removeMember} =
-    useRemoveMember();
-
-  const onRemove = async () => {
-    const ok = await confirmRemove();
-
-    if (!ok) {
-      return;
-    }
-
-    removeMember(
-      {id: memberId},
-      {
-        onSuccess: () => {
-          toast.success("Member removed");
-          onClose();
-        },
-        onError: () => {
-          toast.error("Failed to remove member");
-        },
-      }
-    );
-  };
-
-  const onLeave = async () => {
-    const ok = await confirmLeave();
-
-    if (!ok) {
-      return;
-    }
-
-    removeMember(
-      {id: memberId},
-      {
-        onSuccess: () => {
-          router.replace("/");
-          toast.success("You left the workspace");
-          onClose();
-        },
-        onError: () => {
-          toast.error("Failed to leave the workspace");
-        },
-      }
-    );
-  };
-
-  const onUpdate = async (role: "admin" | "member") => {
-    const ok = await confirmUpdate();
-
-    if (!ok) {
-      return;
-    }
-
-    updateMember(
-      {id: memberId, role},
-      {
-        onSuccess: () => {
-          toast.success("Role changed");
-          onClose();
-        },
-        onError: () => {
-          toast.error("Failed to change role");
-        },
-      }
-    );
-  };
 
   if (isLoadingMember || isLoadingCurrentMember) {
     return (
@@ -156,7 +63,6 @@ export const Profile = ({memberId, onClose}: ProfileProps) => {
     );
   }
 
-  const avatarFallback = member.user.name?.[0] ?? "M";
 
   return (
     <>
@@ -193,7 +99,7 @@ export const Profile = ({memberId, onClose}: ProfileProps) => {
                   <DropdownMenuRadioGroup
                     value={member.role}
                     onValueChange={(role) =>
-                      onUpdate(role as "admin" | "member")
+                      handleUpdate(role as "admin" | "member")
                     }
                   >
                     <DropdownMenuRadioItem value="admin">
@@ -206,7 +112,7 @@ export const Profile = ({memberId, onClose}: ProfileProps) => {
                 </DropdownMenuContent>
               </DropdownMenu>
               <Button
-                onClick={onRemove}
+                onClick={handleRemove}
                 className="w-full"
                 variant="destructive"
               >
@@ -216,7 +122,7 @@ export const Profile = ({memberId, onClose}: ProfileProps) => {
           ) : currentMember?._id === memberId &&
           currentMember?.role !== "admin" ? (
             <div className="flex items-center gap-2 mt-4">
-              <Button onClick={onLeave} className="w-full" variant="default">
+              <Button onClick={handleLeave} className="w-full" variant="default">
                 Leave
               </Button>
             </div>

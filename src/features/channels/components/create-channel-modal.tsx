@@ -1,9 +1,5 @@
 "use client";
 
-import { toast } from "sonner";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-
 import {
   Dialog,
   DialogContent,
@@ -11,46 +7,21 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import {Input} from "@/components/ui/input";
+import {Button} from "@/components/ui/button";
 
-import { useWorkspaceId } from "@/hooks/use-workspace-id";
-
-import { useCreateChannel } from "../api/use-create-channel";
-import { useCreateChannelModal } from "../store/use-create-channel-modal";
+import {useCreateChannelLogic} from "@/features/channels/hooks/useCreateChannelLogic";
 
 export const CreateChannelModal = () => {
-  const router = useRouter();
-  const workspaceId = useWorkspaceId();
-  const { mutate, isPending } = useCreateChannel();
-  const [open, setOpen] = useCreateChannelModal();
-  const [name, setName] = useState("");
+  const {
+    open,
+    name,
+    isPending,
+    handleChange,
+    handleSubmit,
+    handleClose,
+  } = useCreateChannelLogic();
 
-  const handleClose = () => {
-    setName("");
-    setOpen(false);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.replace(/\s+/g, "-").toLowerCase();
-    setName(value);
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    mutate(
-      { name, workspaceId },
-      {
-        onSuccess: (id) => {
-          toast.success("Channel created");
-          router.push(`/workspace/${workspaceId}/channel/${id}`);
-          handleClose();
-        },
-        onError: () => toast.error("Failed to create channel"),
-      }
-    );
-  };
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>

@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="add animation to tailwind config and commit background and foreground in root and prefers-color-scheme">
-      <change afterPath="$PROJECT_DIR$/src/features/api/use-convex-mutation.ts" afterDir="false" />
+    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="refactor features api">
+      <change afterPath="$PROJECT_DIR$/src/features/channels/hooks/useCreateChannelLogic.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/channel/[channelId]/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/workspace/[workspaceId]/channel/[channelId]/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/channels/api/use-create-channel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/channels/api/use-create-channel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/channels/api/use-remove-channel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/channels/api/use-remove-channel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/channels/api/use-update-channel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/channels/api/use-update-channel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/channels/store/use-create-channel-modal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/channels/store/use-create-channel-modal.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/channels/components/create-channel-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/channels/components/create-channel-modal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +133,7 @@
       <workItem from="1725583265548" duration="15400000" />
       <workItem from="1725675997075" duration="14094000" />
       <workItem from="1725852401851" duration="3470000" />
-      <workItem from="1725856172701" duration="10277000" />
+      <workItem from="1725856172701" duration="14052000" />
     </task>
     <task id="LOCAL-00001" summary="Project Setup">
       <option name="closed" value="true" />
@@ -307,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725859554115</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="refactor features api">
+      <option name="closed" value="true" />
+      <created>1725923629185</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1725923629185</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +349,19 @@
     <MESSAGE value="add JotaiProvider in root layout and fix ts error" />
     <MESSAGE value="add animation to tailwind config" />
     <MESSAGE value="add animation to tailwind config and commit background and foreground in root and prefers-color-scheme" />
-    <option name="LAST_COMMIT_MESSAGE" value="add animation to tailwind config and commit background and foreground in root and prefers-color-scheme" />
+    <MESSAGE value="refactor features api" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor features api" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/api/use-convex-mutation.ts</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
