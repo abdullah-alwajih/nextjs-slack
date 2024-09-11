@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="refactor features hooks">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5d35c0a0-ac5a-468f-b748-d8ae08c8f28f" name="Changes" comment="add pwa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,6 +131,7 @@
       <workItem from="1725852401851" duration="3470000" />
       <workItem from="1725856172701" duration="17494000" />
       <workItem from="1725952026036" duration="101000" />
+      <workItem from="1726013008496" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="Project Setup">
       <option name="closed" value="true" />
@@ -318,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725936708193</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add pwa">
+      <option name="closed" value="true" />
+      <created>1726013258182</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1726013258182</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +365,8 @@
     <MESSAGE value="add animation to tailwind config and commit background and foreground in root and prefers-color-scheme" />
     <MESSAGE value="refactor features api" />
     <MESSAGE value="refactor features hooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor features hooks" />
+    <MESSAGE value="add pwa" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pwa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
